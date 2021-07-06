@@ -1,6 +1,7 @@
 from django.urls import path
 from . import views
 
+app_name = 'tool'
 urlpatterns = [
     path('', views.index, name='index'),
     path('tool/int:<tool_id>', views.ver_tool, name='ver_tool'),

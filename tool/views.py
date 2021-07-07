@@ -43,5 +43,5 @@ def buscar_tool(request):
     if tags_only:
         tools = Tool.objects.filter(tags__icontains=termo).order_by('-id')
     else:
-        tools = Tool.objects.filter(Q(tags__icontains=termo), Q(nome__icontains=termo)).order_by('-id')
+        tools = Tool.objects.filter(Q(tags__icontains=termo) | Q(nome__icontains=termo))
     return index(request, search=tools)

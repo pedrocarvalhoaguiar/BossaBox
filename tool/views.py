@@ -32,8 +32,9 @@ def index(request, search='empty'):
         return redirect('index')
 
 
-def ver_tool(request):
-    pass
+def delete_tool(request, tool_id):
+    Tool.objects.get(pk=tool_id).delete()
+    return redirect('index')
 
 
 def buscar_tool(request):

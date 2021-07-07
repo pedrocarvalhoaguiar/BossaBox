@@ -17,14 +17,53 @@
 
 body,html {
     height: 100%;
-}
 
-main{
-    padding: 100px;
 }
 
 .main-container{
-    display: flex;
-    flex-direction: column;
-    align-items: center;
+    padding: 3rem;
+    margin: auto;
+    width: 100%;
+    position: relative;
+    font-family: var(--font-title);
+}
+
+p span {
+    font-family: var(--font-text);
+}
+
+.hash{
+    font-weight: 900;
+}
+
+.header{
+    margin-bottom: 2rem;
+}
+
+.tool-container{
+    margin-top: 3rem;
+
+}
+
+.tool-div{
+    padding: 2rem 1rem;
+    border-style: solid;
+    margin-top: 1rem;
+    display: block;
+    width: 600px;
+    word-wrap: break-word
+}
+
+.add-remove{
+    border:solid black;
+    padding: 0 1rem;
+}
+
+.page-item{
+    font-family: var(--font-text);
+}
+
+.d-block{
+    margin-top: 1.5rem;
+
 }
